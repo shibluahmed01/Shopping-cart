@@ -15,13 +15,13 @@
           src="https://thumbs.dreamstime.com/b/brightness-icon-vector-sign-symbol-isolated-white-backgro-brightness-icon-vector-isolated-white-background-your-web-133736656.jpg"
           alt=""
         />
-        <p>ToggleTheme</p>
+        <p @click="toggleTheme()">ToggleTheme</p>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script></script>
 
 <style scoped>
 .navber {

@@ -36,7 +36,7 @@ export default [{
         price: 695,
         category: "jewelery",
         description: 'The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.',
-        image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+        image: "https://i.pinimg.com/originals/47/42/c7/4742c712595010ebb6cb6bb0aeff5aaf.png"
     },
     {
         id: 6,

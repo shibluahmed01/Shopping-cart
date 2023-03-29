@@ -12,7 +12,7 @@
                 {{ product.id }}
               </p>
             </div>
-            <div>
+            <div class="top">
               <p>
                 {{ product.title }}
               </p>
@@ -33,11 +33,12 @@
                 {{ product.description }}
               </p> -->
             </div>
-            <div>
-              <button color="primary">Read More</button>
-              <button class="bg-primary" @click="cartStore.add(product.id)">
+            <br>
+            <div class="down">
+              <p class="read">Read More</p>
+              <p class="cart" @click="cartStore.add(product.id)">
                 Add to Cart
-              </button>
+              </p>
             </div>
           </div>
         </div>
@@ -49,10 +50,12 @@
 <script>
 import Items from "../store/data";
 
+
 export default {
   data() {
     return {
       products: Items,
+      
     };
   },
 };
@@ -72,10 +75,46 @@ export default {
 
 .product {
   width: 300px;
+  font-family: Arial,  sans-serif;
 }
 
 .container {
   max-width: 1400px !important;
   margin: auto;
+}
+
+.down{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.read{
+  background: blue;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+}
+
+.read:hover{
+
+background: rgb(39, 98, 207);
+}
+
+.cart{
+  background: blue;
+  
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem;
+}
+
+.cart:hover{
+  background: rgb(39, 98, 207);
+}
+
+.top{
+  font-weight: bold;
+ 
 }
 </style>
