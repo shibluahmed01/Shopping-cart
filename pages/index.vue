@@ -4,7 +4,7 @@
       <div v-for="(product, i) in products" :key="i">
         <div class="box">
           <div class="product">
-            <div class="pic">
+            <div >
               <img :src="product.image" alt="" />
             </div>
             <div>
@@ -68,13 +68,14 @@ export default {
   align-items: center;
   margin: 1rem;
 }
-.pic {
-  width: 100%;
-  height: 470px;
-}
+/* .pic {
+  width: 300px;
+  height: 300px;
+} */
 
 .product {
   width: 300px;
+  height: 600px;
   font-family: Arial,  sans-serif;
 }
 
